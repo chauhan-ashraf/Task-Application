@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    
+    <div class="container">
+      <h1>Task Manager</h1>
+
+      <!-- Registration Form -->
+      <div id="register-form">
+        <h2>Register</h2>
+        <input type="email" id="register-email" placeholder="Email" />
+        <input type="password" id="register-password" placeholder="Password" />
+        <button onclick="register()">Register</button>
+      </div>
+
+      <!-- Login Form -->
+
+      <div id="login-form" style="display: none">
+        <h2>Login</h2>
+        <input type="email" id="login-email" placeholder="Email" />
+        <input type="password" id="login-password" placeholder="Password" />
+        <button onclick="login()">Login</button>
+      </div>
+
+      <!-- Task Management Section -->
+
+      <div id="task-section" style="display: none">
+        <h2>Your Task</h2>
+        <input type="text" id="task-title" placeholder="Task Title" />
+        <textarea id="task-desc" placeholder="Task Description"></textarea>
+        <button onclick="createTask()">Add Task</button>
+
+        <ul id="task-list"></ul>
+        <button onclick="logout()">Logout</button>
+      </div>
+    </div>
+  </body>
+  <script src="/script.js"></script>
+</html>
